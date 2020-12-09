@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/purple_200"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/cl_pic"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/cool"/>
+            <TextView
+                android:id="@+id/cl_name"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_below="@id/cl_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorButton"
+                android:text="小帅"/>
+            <TextView
+                android:id="@+id/cl_description"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorButton"
+                android:layout_below="@+id/cl_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这首歌词竟然是我伦写的，写得很好哎"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
